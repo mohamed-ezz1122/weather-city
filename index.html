@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="logo@2x.png">
+    <!-- >===========================< -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title>weather App</title>
+</head>
+<body>
+    <!-- nav stractsher -->
+    <nav class="navbar navbar-expand-lg bg-dark py-4">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+            <img src="logo@2x.png" alt="">
+            <h1>
+                Weather <br>
+                <span>tagline goes here</span>
+            </h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="listBorger fa-solid fa-bars "></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav groupeLink gap-5 ms-auto">
+              <a class="navLink  "  href="#">Home</a>
+              <a class="navLink " href="#">News</a>
+              <a class="navLink " href="#">Live Camers</a>
+              <a class="navLink " href="#">Photos</a>
+              <a class="navLink " href="#">Contact</a>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- body stractsher -->
+      <main>
+        <section class="weatherBody py-5">
+            <div class="container">
+                <form class="position-relative mb-5 ">
+                    <input type="text" name="inputSearch" class="form-control  py-3 rounded-5" id="inputSearch" placeholder="Find Ypur Location...">
+                    <button class="border-0 btnSearch position-absolute py-2 rounded-5 px-5">find</button>
+                </form>
+                <div class="content mb-0 row g-0  rounded ">
+                    
+                    <div class="card col-12 col-md-4 card-one" id="cardOne">
+                        <div class="cardHead p-3 d-flex rounded-start align-items-center  justify-content-between ">
+                            <span id="dayName">Tuesday</span>
+                          <div>
+                              <span id="monthNum">6</span>
+                            <span id="monthId">
+                              
+                                8 August
+                            </span>
+                            
+                          </div>
+                        </div>
+                        <div class="cardBody rounded-start  p-3">
+                            <h4 class="text-white" id="cityName">Zagazig</h4>
+                            <div class="cardContent text-white my-2 d-flex align-items-center justify-content-around">
+                                <h3 class="display-1 fw-bold" id="temperature">35<sup>o</sup>C</h3> 
+                            <img src="" class="w-25"  id="iconWeather" alt="">
+                            </div>
+                            <span class="clear moode mb-2" id="moode">clear</span>
+                            <div class="iconsCard text-white my-4">
+                                <span class="me-2"><img class="me-1"  src="imag/icon-umberella.png" alt="">20%</span>
+                                <span class="me-2"><img class="me-1" src="imag/icon-wind.png" alt="">18km/h</span>
+                                <span class="me-2"><img class="me-1" src="imag/icon-compass.png" alt="">East</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4  card-two" id="card">
+                        <div class="cardHead p-3 text-center">
+                            <span id="naxetDay">Wednesday</span>
+                        
+                        </div>
+                        <div class="cardBody d-flex flex-column  align-items-center justify-content-center py-5 p-3">
+                            
+                            <img src="" class="iconNextDay"  id="iconNextDay" alt="">
+                            <div class="cardContent mb-2 text-white my-2 d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="h1 mb-2" id="tempNextDayMa">35<sup>o</sup>C</h3> 
+                                <span id="tempNextDayMi">19<sup>o</sup></span>
+                            </div>
+                            <span class="clear moode  mb-2" id="stateNextDay">clear</span>
+                            
+                        </div>
+                    </div>
+                    <div class="card col-md-4   card-three" id="card">
+                        <div class="cardHead rounded-end  p-3 text-center">
+                            <span id="dayThree">Thursday</span>
+                        
+                        </div>
+                        <div class="cardBody rounded-end d-flex  flex-column align-items-center justify-content-center py-5  p-3">
+                            
+                            <img src="" class="iconDayThree"  id="iconDayThree" alt="">
+                            <div class="cardContent mb-2 text-white my-2 d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="h1 mb-2" id="tempDayThreeMa">35<sup>o</sup>C</h3> 
+                                <span class="tempDayThreeMi" id="tempDayThreeMi">19<sup>o</sup></span>
+                            </div>
+                            <span class="clear moode  mb-2" id="stateDayThree">clear</span>
+                            
+                        </div>
+                    </div>
+                   
+                    
+                   
+                </div>
+                
+            </div>
+           
+              
+           
+
+        </section>
+        <footer class="py-5 ">
+          <div class="container ">
+            <div class="footetBody row">
+                <form class="position-relative mb-5  col-md-8">
+                    <input type="email" name="email" class="form-control inputSupsc pe-3  py-3 rounded-5" id="inputSupsc" placeholder="Enter Your Email to supscribe">
+                    <button class="border-0 btnFoot position-absolute py-2 rounded-5 px-3">supsctibe</button>
+                </form>
+                <div class="footerItems  col-md-4">
+                    <div class="footerIcons d-flex  justify-content-center align-items-center gap-2">
+                        <div class="icon d-flex  justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon d-flex  justify-content-center align-items-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icon d-flex  justify-content-center align-items-center">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div class="icon d-flex  justify-content-center align-items-center">
+                            <i class="fa-solid fa-p"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+           
+           
+          </div>
+          
+
+        </footer>
+      </main>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

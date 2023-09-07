@@ -1,0 +1,17 @@
+@media screen and (max-width :767){
+    
+    section .content{
+       display: flex;
+       flex-direction: column;
+    }
+    nav .navLink {
+        color: #eee;
+        transition: all 0.3s;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+      }
+      
+
+    
+}
