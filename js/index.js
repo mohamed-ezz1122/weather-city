@@ -70,7 +70,7 @@ async function getApi(city) {
       ];
    let month = monthYears[day.getMonth()]
 //    console.log(deyNow);
-      let monthNum= day.getDay() +1
+      let monthNum= day.getDay()+3
       console.log(monthNum);
 
     document.getElementById('monthId').innerHTML=month
@@ -114,19 +114,13 @@ async function getApi(city) {
 }
 
 
-getApi("cairo");
 
-let worningMassg=document.getElementById('worningMassg')
-function getLocation(){
-     if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(showPosition);
-      } else { 
-        worningMassg.innerHTML = "Geolocation is not supported by this browser.";
-      }
+
+function secsses(position)
+{
+  
+  const location=`${position.coords.latitude},${position.coords.longitude}`
+  console.log(location);
+  getApi(location) 
 }
-
-// function showPosition(position) {
-//     worningMassg.innerHTML="Latitude: " + position.coords.latitude + 
-//     "<br>Longitude: " + position.coords.longitude;
-// }
-// showPosition()
+navigator.geolocation.getCurrentPosition(secsses)
